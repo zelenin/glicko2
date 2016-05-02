@@ -1,0 +1,40 @@
+{
+    "name": "zelenin/glicko2",
+    "description": "A PHP implementation of Glicko2 rating system",
+    "type": "library",
+    "keywords": [
+        "glicko",
+        "glicko2",
+        "rating",
+        "ranking"
+    ],
+    "homepage": "https://github.com/zelenin/glicko2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksandr Zelenin",
+            "email": "aleksandr@zelenin.me",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/zelenin/glicko2/issues",
+        "source": "https://github.com/zelenin/glicko2"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zelenin\\Glicko2\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Zelenin\\Glicko2\\Test\\": "tests"
+        }
+    }
+}
