@@ -93,7 +93,7 @@ final class Glicko2
      */
     private function g($phiJ)
     {
-        return 1 / sqrt(1 + 3 * pow($phiJ, 2) / pow(3.14, 2));
+        return 1 / sqrt(1 + 3 * pow($phiJ, 2) / pow(M_PI, 2));
     }
 
     /**
