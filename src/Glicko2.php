@@ -39,11 +39,11 @@ final class Glicko2
 
         $score = $match->getScore();
 
-        $r1 = $this->calculatePlayer($player1, $player2, $score);
-        $r2 = $this->calculatePlayer($player2, $player1, (1 - $score));
+        $calculationResult1 = $this->calculatePlayer($player1, $player2, $score);
+        $calculationResult2 = $this->calculatePlayer($player2, $player1, (1 - $score));
 
-        $match->getPlayer1()->loadFromCalculationResult($r1);
-        $match->getPlayer2()->loadFromCalculationResult($r2);
+        $match->getPlayer1()->loadFromCalculationResult($calculationResult1);
+        $match->getPlayer2()->loadFromCalculationResult($calculationResult2);
     }
 
     /**
