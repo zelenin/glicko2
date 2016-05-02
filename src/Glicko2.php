@@ -139,7 +139,7 @@ final class Glicko2
         };
         $epsilon = 0.000001;
         $v = $this->v($phiJ, $mu, $muJ);
-        $tau = 0.5;
+        $tau = $this->tau;
 
         if (pow($delta, 2) > (pow($phi, 2) + $v)) {
             $B = log(pow($delta, 2) - pow($phi, 2) - $v);
